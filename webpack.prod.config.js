@@ -35,11 +35,12 @@ module.exports = (env) => ({
       template: "src/index.ejs",
       templateParameters: {
         isLocal: env && env.isLocal === "true",
+        isProd: env && env.isProd === "true",
       },
     }),
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin([
-      { from: path.resolve(__dirname, "importmap.json") },
+      { from: path.resolve(__dirname, "importmap_prod.json") },
     ]),
   ],
   externals: ["single-spa", "vue", "vue-router", /^@vue-mf\/.+$/],

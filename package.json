@@ -1,10 +1,10 @@
 {
   "scripts": {
-    "start": "webpack-dev-server --mode=development --port 9000 --env.isLocal=true",
+    "start": "webpack-dev-server --mode=development --port 9000 --env.isLocal=true --config webpack.dev.config.js",
     "lint": "eslint src",
     "test": "jest --passWithNoTests",
     "format": "prettier --write './**'",
-    "build": "webpack --mode=production"
+    "build": "webpack --mode=production --env.isProd=true --config webpack.prod.config.js"
   },
   "husky": {
     "hooks": {

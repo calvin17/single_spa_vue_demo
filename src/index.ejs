@@ -6,8 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>My Tracker</title>
   <meta name="importmap-type" content="systemjs-importmap" />
-  <script type="systemjs-importmap" src="./importmap.json"></script>
+  <% if (isProd) { %>
+    <script type="systemjs-importmap" src="./importmap_prod.json"></script>
+  <% } %>
   <% if (isLocal) { %>
+  <script type="systemjs-importmap" src="./importmap_dev.json"></script>
   <script type="systemjs-importmap">
     {
       "imports": {
