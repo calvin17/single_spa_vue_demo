@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>My Tracker</title>
   <meta name="importmap-type" content="systemjs-importmap" />
-  <script type="systemjs-importmap" src="https://storage.googleapis.com/vue.microfrontends.app/importmap.json"></script>
+  <script type="systemjs-importmap" src="./importmap.json"></script>
   <% if (isLocal) { %>
   <script type="systemjs-importmap">
     {
@@ -24,7 +24,7 @@
 <body>
   <script>
     System.import('@vue-mf/styleguide');
-    System.import('@vue-mf/root-config');
+    System.import('@vue-mf/vue-mf-root-config');
   </script>
   <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
 </body>

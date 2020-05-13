@@ -7,9 +7,15 @@ registerApplication({
 });
 
 registerApplication({
-  name: "@vue-mf/dogs-dashboard",
+  name: "@vue-mf/report-dashboard",
   app: () => System.import("@vue-mf/report-dashboard"),
   activeWhen: "/reports",
+});
+
+registerApplication({
+  name: "@vue-mf/profile-info",
+  app: () => System.import("@vue-mf/profile-info"),
+  activeWhen: "/profile-info",
 });
 
 start();
