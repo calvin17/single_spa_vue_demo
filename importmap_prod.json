@@ -4,9 +4,9 @@
     "vue": "https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js",
     "vue-router": "https://cdn.jsdelivr.net/npm/vue-router@3.0.7/dist/vue-router.min.js",
     "@vue-mf/vue-mf-root-config": "https://master.dhqy511d6n2zq.amplifyapp.com/vue-mf-root-config.js",
-    "@vue-mf/styleguide": "http://localhost:8080/vue-mf-styleguide.js",
-    "@vue-mf/sidenavbar": "https://localhost:8501/js/app.js",
-    "@vue-mf/report-dashboard": "https://localhost:8502/js/app.js",
+    "@vue-mf/styleguide": "http://styleguide-vue-mf.s3-website.ap-south-1.amazonaws.com/",
+    "@vue-mf/sidenavbar": "http://side-nav-mf-vue.s3-website.ap-south-1.amazonaws.com/js/app.js",
+    "@vue-mf/report-dashboard": "http://tracker-dashboard-vue-mf.s3-website.ap-south-1.amazonaws.com/js/app.js",
     "@vue-mf/profile-info": "https://localhost:8503/js/app.js"
   }
 }
